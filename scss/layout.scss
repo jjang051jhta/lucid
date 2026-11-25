@@ -1,3 +1,63 @@
+@import "vars";
+
 body {
   font-family: "Pretendard", sans-serif;
+}
+.header {
+  position: fixed;
+  //width: calc(100% - 40px);
+  left: 20px;
+  right: 20px;
+  top: 20px;
+
+  border-radius: 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  .logo {
+    position: absolute;
+    left: 50px;
+    a {
+      display: flex;
+      height: $header-height;
+      align-items: center;
+    }
+  }
+  .util-menu {
+    position: absolute;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    height: $header-height;
+    gap: 20px;
+    .language-box {
+      .list {
+        display: none;
+      }
+    }
+    .all-menu {
+      .btn {
+        display: flex;
+        padding: 0;
+      }
+    }
+  }
+  .gnb {
+    .list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 500;
+      // gap: 0 60px;
+      li {
+        a {
+          display: flex;
+          padding: 0 30px;
+          height: $header-height;
+          align-items: center;
+        }
+      }
+    }
+  }
 }

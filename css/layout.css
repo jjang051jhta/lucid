@@ -1,3 +1,51 @@
 body {
   font-family: "Pretendard", sans-serif;
 }
+
+.header {
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  top: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.header .logo {
+  position: absolute;
+  left: 50px;
+}
+.header .logo a {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+.header .util-menu {
+  position: absolute;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  gap: 20px;
+}
+.header .util-menu .language-box .list {
+  display: none;
+}
+.header .util-menu .all-menu .btn {
+  display: flex;
+  padding: 0;
+}
+.header .gnb .list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.header .gnb .list li a {
+  display: flex;
+  padding: 0 30px;
+  height: 80px;
+  align-items: center;
+}
