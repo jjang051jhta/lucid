@@ -164,7 +164,7 @@ body {
 .section01 .rolling-txt {
   display: flex;
   font-size: clamp(60px, 10vw, 200px);
-  animation: marquee 30s linear infinite;
+  animation: marquee 10s linear infinite;
   color: rgba(255, 255, 255, 0.6);
   width: -moz-max-content;
   width: max-content;
@@ -175,6 +175,70 @@ body {
   white-space: nowrap;
   padding-right: 40px;
   flex-shrink: 0;
+}
+
+.section02 {
+  padding: 200px 0;
+  background-color: #134b8f;
+  background-image: url("../images/main/sec3_bgIcon.png");
+  background-repeat: no-repeat;
+  background-position: left 0 top 200px;
+}
+.section02 .title-box {
+  color: #fff;
+  text-align: center;
+}
+.section02 .title-box .desc {
+  margin: 20px 0;
+  font-size: 20px;
+  opacity: 0.5;
+  color: rgba(255, 255, 255, 0.5);
+}
+.section02 .title-box .alert {
+  opacity: 0.5;
+}
+.section02 .list {
+  display: flex;
+  gap: 20px;
+  margin-top: 100px;
+}
+.section02 .list li {
+  padding: 50px;
+  border-radius: 50px;
+  background-color: #eee;
+  flex-basis: 25%;
+  transition: all 0.25s ease;
+}
+.section02 .list li:hover {
+  transform: translateY(-20px);
+}
+.section02 .list li .upper {
+  display: flex;
+  flex-direction: column;
+}
+.section02 .list li .upper .category {
+  color: #134b8f;
+  font-size: 24px;
+}
+.section02 .list li .upper .icon-box {
+  background-color: #fff;
+  align-self: start;
+  margin-top: 20px;
+  border-radius: 100px;
+  display: inline-flex;
+  padding: 20px;
+}
+.section02 .list li .lower {
+  margin-top: 100px;
+}
+.section02 .list li .lower .title {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.section02 .list li .lower p {
+  font-size: 18px;
+  color: #666;
 }
 
 @keyframes marquee {
