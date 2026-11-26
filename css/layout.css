@@ -109,6 +109,7 @@ body {
 .section01 {
   padding: 200px 0;
   background-color: #e3e8ed;
+  overflow: hidden;
 }
 .section01 .container {
   position: relative;
@@ -159,4 +160,28 @@ body {
 }
 .section01 .container .list li a:hover:after {
   width: 100%;
+}
+.section01 .rolling-txt {
+  display: flex;
+  font-size: clamp(60px, 10vw, 200px);
+  animation: marquee 30s linear infinite;
+  color: rgba(255, 255, 255, 0.6);
+  width: -moz-max-content;
+  width: max-content;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  font-weight: 700;
+}
+.section01 .rolling-txt div {
+  white-space: nowrap;
+  padding-right: 40px;
+  flex-shrink: 0;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
