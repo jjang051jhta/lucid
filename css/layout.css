@@ -411,6 +411,28 @@ body {
   flex-direction: column;
 }
 
+.footer {
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+}
+.footer .container {
+  padding: 100px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.footer dl {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer dl div {
+  display: flex;
+}
+.footer dl div dt {
+  flex-basis: 150px;
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(0);
