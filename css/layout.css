@@ -8,27 +8,27 @@ body {
 }
 
 .heading02 {
+  margin-bottom: 30px;
   font-size: clamp(20px, 1.8vw, 24px);
   font-weight: 700;
-  margin-bottom: 30px;
 }
 
 .heading03 {
-  line-height: 1.2;
   font-size: clamp(24px, 2.4vw, 42px);
   font-weight: 700;
+  line-height: 1.2;
 }
 
 .header {
-  position: fixed;
-  left: 20px;
-  right: 20px;
-  top: 20px;
-  z-index: 99;
-  border-radius: 20px;
-  background-color: #fff;
   display: flex;
   justify-content: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  left: 20px;
+  z-index: 99;
+  background-color: #fff;
+  border-radius: 20px;
 }
 .header .logo {
   position: absolute;
@@ -36,16 +36,16 @@ body {
 }
 .header .logo a {
   display: flex;
-  height: 80px;
   align-items: center;
+  height: 80px;
 }
 .header .util-menu {
-  position: absolute;
-  right: 50px;
   display: flex;
   align-items: center;
-  height: 80px;
   gap: 20px;
+  position: absolute;
+  right: 50px;
+  height: 80px;
 }
 .header .util-menu .language-box .list {
   display: none;
@@ -56,48 +56,48 @@ body {
 }
 .header .gnb .list {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   font-size: 18px;
   font-weight: 500;
 }
 .header .gnb .list li a {
   display: flex;
-  padding: 0 30px;
-  height: 80px;
   align-items: center;
+  height: 80px;
+  padding: 0 30px;
 }
 
 .main-visual .mask {
   overflow: hidden;
 }
 .main-visual .mask .visual01 video {
-  height: 100vh;
   width: 100%;
+  height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .main-visual .mask .visual02 {
-  background-image: url("../images/main/main_visual1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh;
+  background-image: url("../images/main/main_visual1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .main-visual .mask .pagination {
+  display: flex;
   position: absolute;
+  top: auto;
   bottom: 100px;
   left: 200px;
-  top: auto;
-  width: auto;
   z-index: 2;
-  display: flex;
+  width: auto;
 }
 .main-visual .mask .pagination .swiper-pagination-bullet {
   width: 20px;
   height: 20px;
-  border-radius: 100px;
   background: none;
   border: 3px solid #fff;
+  border-radius: 100px;
   opacity: 1;
   transition: all 0.25s ease;
 }
@@ -107,26 +107,26 @@ body {
 }
 
 .section01 {
+  position: relative;
   padding: 200px 0;
   background-color: #e3e8ed;
   overflow: hidden;
-  position: relative;
 }
 .section01 .container {
-  position: relative;
   display: flex;
-  z-index: 1;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 .section01 .container .title-box {
   position: absolute;
   left: 0;
 }
 .section01 .container .title-box p {
+  margin-top: 30px;
   font-size: 18px;
   color: #999;
-  margin-top: 30px;
 }
 .section01 .container .img-box {
   width: 30vw;
@@ -153,40 +153,40 @@ body {
   display: inline-block;
 }
 .section01 .container .list li a:after {
-  content: "";
   display: block;
   width: 0;
   height: 2px;
   background-color: #333;
+  content: "";
   transition: all 0.5s ease;
 }
 .section01 .container .list li a:hover:after {
   width: 100%;
 }
 .section01 .rolling-txt {
+  display: flex;
   position: absolute;
   bottom: 100px;
-  display: flex;
-  font-size: clamp(60px, 10vw, 200px);
-  animation: marquee 10s linear infinite;
-  color: rgba(255, 255, 255, 0.6);
   width: -moz-max-content;
   width: max-content;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  font-size: clamp(60px, 10vw, 200px);
   font-weight: 700;
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  animation: marquee 10s linear infinite;
 }
 .section01 .rolling-txt div {
-  white-space: nowrap;
-  padding-right: 40px;
   flex-shrink: 0;
+  padding-right: 40px;
+  white-space: nowrap;
 }
 
 .section02 {
   padding: 200px 0;
   background-color: #134b8f;
   background-image: url("../images/main/sec3_bgIcon.png");
-  background-repeat: no-repeat;
   background-position: left 0 top 200px;
+  background-repeat: no-repeat;
 }
 .section02 .title-box {
   color: #fff;
@@ -195,8 +195,8 @@ body {
 .section02 .title-box .desc {
   margin: 20px 0;
   font-size: 20px;
-  opacity: 0.5;
   color: rgba(255, 255, 255, 0.5);
+  opacity: 0.5;
 }
 .section02 .title-box .alert {
   opacity: 0.5;
@@ -207,10 +207,10 @@ body {
   margin-top: 100px;
 }
 .section02 .list li {
-  padding: 50px;
-  border-radius: 50px;
-  background-color: #eee;
   flex-basis: 25%;
+  padding: 50px;
+  background-color: #eee;
+  border-radius: 50px;
   transition: all 0.25s ease;
 }
 .section02 .list li:hover {
@@ -221,24 +221,24 @@ body {
   flex-direction: column;
 }
 .section02 .list li .upper .category {
-  color: #134b8f;
   font-size: 24px;
+  color: #134b8f;
 }
 .section02 .list li .upper .icon-box {
-  background-color: #fff;
+  display: inline-flex;
   align-self: start;
   margin-top: 20px;
-  border-radius: 100px;
-  display: inline-flex;
   padding: 20px;
+  background-color: #fff;
+  border-radius: 100px;
 }
 .section02 .list li .lower {
   margin-top: 100px;
 }
 .section02 .list li .lower .title {
+  margin-bottom: 20px;
   font-size: 36px;
   font-weight: 500;
-  margin-bottom: 20px;
 }
 .section02 .list li .lower p {
   font-size: 18px;
@@ -252,10 +252,18 @@ body {
 .section03 .list li a {
   display: flex;
   flex-direction: column;
+  gap: 30px;
+  padding: 50px;
   background-color: #e8e8e8;
   border-radius: 50px;
-  padding: 50px;
-  gap: 30px;
+  transition: all 0.25s ease;
+}
+.section03 .list li a:hover {
+  background-color: #134b8f;
+  color: #fff;
+}
+.section03 .list li a:hover .more:before {
+  background-color: #fff;
 }
 .section03 .list li a .category-box {
   display: flex;
@@ -281,18 +289,78 @@ body {
   font-weight: 700;
 }
 .section03 .list li a .more {
-  margin-top: 100px;
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-top: 100px;
 }
 .section03 .list li a .more:before {
   content: "";
   display: block;
   width: 5px;
   height: 5px;
+  background-color: #fff;
   border-radius: 100px;
-  background: #000;
+  transition: all 0.25s ease;
+}
+
+.section04 {
+  padding: 100px 0;
+  background-color: #000;
+}
+.section04 .title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/main/sec4_bg.jpg");
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding: 100px 0;
+  border-radius: 50px;
+}
+.section04 .title-box h3 {
+  font-size: clamp(24px, 4vw, 64px);
+}
+.section04 .title-box a {
+  background-color: #000;
+  padding: 20px 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.section04 .title-box a span {
+  position: relative;
+  z-index: 1;
+}
+.section04 .title-box a:hover:after {
+  width: 100%;
+}
+.section04 .title-box a:after {
+  content: "";
+  display: block;
+  background-color: #134b8f;
+  height: 100%;
+  width: 0%;
+  left: 0;
+  position: absolute;
+  z-index: 0;
+  transition: all 0.25s ease;
+}
+.section04 .title-box a:before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 100px;
+  position: relative;
+  z-index: 1;
 }
 
 @keyframes marquee {
