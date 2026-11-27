@@ -299,7 +299,7 @@ body {
   display: block;
   width: 5px;
   height: 5px;
-  background-color: #fff;
+  background-color: #000;
   border-radius: 100px;
   transition: all 0.25s ease;
 }
@@ -361,6 +361,54 @@ body {
   border-radius: 100px;
   position: relative;
   z-index: 1;
+}
+
+.section05 {
+  background-color: #000;
+  color: #fff;
+}
+.section05 .container {
+  padding: 100px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.section05 .list li {
+  margin-bottom: 10px;
+}
+.section05 .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  gap: 30px;
+  padding: 50px 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-top: 50px;
+  border-radius: 100px;
+}
+.section05 .info .txt {
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+}
+.section05 .info .txt span {
+  padding: 5px;
+  border: 1px solid #134b8f;
+  border-radius: 100px;
+  color: #134b8f;
+  margin-right: 10px;
+}
+.section05 .info .txt:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 30px;
+  background-color: #fff;
+  margin-left: 30px;
+}
+.section05 .info .period {
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes marquee {
