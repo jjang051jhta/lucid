@@ -110,10 +110,12 @@ body {
   padding: 200px 0;
   background-color: #e3e8ed;
   overflow: hidden;
+  position: relative;
 }
 .section01 .container {
   position: relative;
   display: flex;
+  z-index: 1;
   justify-content: center;
   align-items: center;
 }
@@ -162,6 +164,8 @@ body {
   width: 100%;
 }
 .section01 .rolling-txt {
+  position: absolute;
+  bottom: 100px;
   display: flex;
   font-size: clamp(60px, 10vw, 200px);
   animation: marquee 10s linear infinite;
@@ -239,6 +243,56 @@ body {
 .section02 .list li .lower p {
   font-size: 18px;
   color: #666;
+}
+
+.section03 {
+  padding: 200px 0;
+  overflow: hidden;
+}
+.section03 .list li a {
+  display: flex;
+  flex-direction: column;
+  background-color: #e8e8e8;
+  border-radius: 50px;
+  padding: 50px;
+  gap: 30px;
+}
+.section03 .list li a .category-box {
+  display: flex;
+  justify-content: space-between;
+}
+.section03 .list li a .category-box .category {
+  font-size: 24px;
+  font-weight: 700;
+}
+.section03 .list li a .category-box .date {
+  font-size: 18px;
+  font-weight: 500;
+}
+.section03 .list li a .img-box {
+  border-radius: 30px;
+  overflow: hidden;
+}
+.section03 .list li a .img-box img {
+  width: 100%;
+}
+.section03 .list li a .title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.section03 .list li a .more {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.section03 .list li a .more:before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 100px;
+  background: #000;
 }
 
 @keyframes marquee {
